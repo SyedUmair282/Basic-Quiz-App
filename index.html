@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz app</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="div1">
+        <h1>Quiz App: General Knowledge</h1>
+    </div>
+    <br>
+    <div id="div2">
+        <h4 class="questions">1) Who is the father of C Language?</h4>
+        <input name="gk" type="radio" class="questions" id="q1-r1" onclick="check()">
+        <label id="la1"> Bjarne Stroustrup</label>
+        <br>
+        <br>
+        <input name="gk" type="radio" class="questions" id="q1-r2" onclick="check()">
+        <label id="la2"> James A. Gosling</label>
+        <br>
+        <br>
+        <input name="gk" type="radio" class="questions" id="q1-r3" onclick="check()">
+        <label id="la3"> Dennis Ritchie</label>
+        <br>
+        <br>
+        <input name="gk" type="radio" class="questions" id="q1-r4" onclick="check()">
+        <label id="la4"> Dr. E.F. Codd</label>
+        <br>
+        <br>
+        <button class="clr" onclick="unchecked()">Clear Selection</button>
+        <br>
+        <br>
+    </div>
+    <br>
+    <div id="div3">
+        <h4 class="questions">2) C language Developed at?</h4>
+        <input name="gk1" type="radio" class="questions" id="q2-r1" onclick="check1()">
+        <label id="la5"> AT & T's Bell Laboratories in 1972</label>
+        <br>
+        <br>
+        <input name="gk1" type="radio" class="questions" id="q2-r2" onclick="check1()">
+        <label id="la6"> AT & T's Bell Laboratories in 1970</label>
+        <br>
+        <br>
+        <input name="gk1" type="radio" class="questions" id="q2-r3" onclick="check1()">
+        <label id="la7"> Sun Microsystems in 1973</label>
+        <br>
+        <br>
+        <input name="gk1" type="radio" class="questions" id="q2-r4" onclick="check1()">
+        <label id="la8"> Cambridge University in 1972</label>
+        <br>
+        <br>
+        <button class="clr" onclick="unchecked1()">Clear Selection</button>
+        <br>
+        <br>
+    </div>
+    <br>
+    <div id="div4">
+        <h4 class="questions">3) C Programs are converted into Machine language with the help of
+        </h4>
+        <input name="gk2" type="radio" class="questions" id="q3-r1" onclick="check2()">
+        <label id="la9"> An Editor</label>
+        <br>
+        <br>
+        <input name="gk2" type="radio" class="questions" id="q3-r2" onclick="check2()">
+        <label id="la10"> An operating System</label>
+        <br>
+        <br>
+        <input name="gk2" type="radio" class="questions" id="q3-r3" onclick="check2()">
+        <label id="la11"> A Compiler</label>
+        <br>
+        <br>
+        <input name="gk2" type="radio" class="questions" id="q3-r4" onclick="check2()">
+        <label id="la12"> A Interpreter</label>
+        <br>
+        <br>
+        <button class="clr" onclick="unchecked2()">Clear Selection</button>
+        <br>
+        <br>
+    </div>
+    <br>
+    <div id="div5">
+        <h4 class="questions">4) C was Primarily Developed as
+        </h4>
+        <input name="gk3" type="radio" class="questions" id="q4-r1" onclick="check3()">
+        <label id="la13"> General Purpose</label>
+        <br>
+        <br>
+        <input name="gk3" type="radio" class="questions" id="q4-r2" onclick="check3()">
+        <label id="la14"> System Programing</label>
+        <br>
+        <br>
+        <input name="gk3" type="radio" class="questions" id="q4-r3" onclick="check3()">
+        <label id="la15"> Data Processing</label>
+        <br>
+        <br>
+        <input name="gk3" type="radio" class="questions" id="q4-r4" onclick="check3()">
+        <label id="la16"> None of the above</label>
+        <br>
+        <br>
+        <button class="clr" onclick="unchecked3()">Clear Selection</button>
+        <br>
+        <br>
+    </div>
+    <br>
+    <div id="div6">
+        <h4 class="questions">5) Standard ANSI C recognize --------------- number of keywords
+        </h4>
+        <input name="gk4" type="radio" class="questions" id="q5-r1" onclick="check4()">
+        <label id="la17"> 30</label>
+        <br>
+        <br>
+        <input name="gk4" type="radio" class="questions" id="q5-r2" onclick="check4()">
+        <label id="la18"> 31</label>
+        <br>
+        <br>
+        <input name="gk4" type="radio" class="questions" id="q5-r3" onclick="check4()">
+        <label id="la19"> 32</label>
+        <br>
+        <br>
+        <input name="gk4" type="radio" class="questions" id="q5-r4" onclick="check4()">
+        <label id="la20"> 33</label>
+        <br>
+        <br>
+        <button class="clr" onclick="unchecked4()">Clear Selection</button>
+        <br>
+        <br>
+    </div>
+    <br>
+    <div id="div7">
+        <h4 class="questions">6) Which one is not a reserved keyword for C?
+        </h4>
+        <input name="gk5" type="radio" class="questions" id="q6-r1" onclick="check5()">
+        <label id="la21"> auto</label>
+        <br>
+        <br>
+        <input name="gk5" type="radio" class="questions" id="q6-r2" onclick="check5()">
+        <label id="la22"> main</label>
+        <br>
+        <br>
+        <input name="gk5" type="radio" class="questions" id="q6-r3" onclick="check5()">
+        <label id="la23"> register</label>
+        <br>
+        <br>
+        <input name="gk5" type="radio" class="questions" id="q6-r4" onclick="check5()">
+        <label id="la24"> default</label>
+        <br>
+        <br>
+        <button class="clr" onclick="unchecked5()">Clear Selection</button>
+        <br>
+        <br>
+    </div>
+    <br>
+    <div id="div8">
+        <h4 class="questions">7) A C variable can not starts with a
+        </h4>
+        <input name="gk6" type="radio" class="questions" id="q7-r1" onclick="check6()">
+        <label id="la25"> A number</label>
+        <br>
+        <br>
+        <input name="gk6" type="radio" class="questions" id="q7-r2" onclick="check6()">
+        <label id="la26"> A special character other than an _</label>
+        <br>
+        <br>
+        <input name="gk6" type="radio" class="questions" id="q7-r3" onclick="check6()">
+        <label id="la27"> Both of above</label>
+        <br>
+        <br>
+        <input name="gk6" type="radio" class="questions" id="q7-r4" onclick="check6()">
+        <label id="la28"> An alphabet</label>
+        <br>
+        <br>
+        <button class="clr" onclick="unchecked6()">Clear Selection</button>
+        <br>
+        <br>
+    </div>
+    <br>
+    <div id="div9">
+        <h4 class="questions">8) Which is the only function all C program must have
+        </h4>
+        <input name="gk7" type="radio" class="questions" id="q8-r1" onclick="check7()">
+        <label id="la29"> start()</label>
+        <br>
+        <br>
+        <input name="gk7" type="radio" class="questions" id="q8-r2" onclick="check7()">
+        <label id="la30"> system()</label>
+        <br>
+        <br>
+        <input name="gk7" type="radio" class="questions" id="q8-r3" onclick="check7()">
+        <label id="la31"> main()</label>
+        <br>
+        <br>
+        <input name="gk7" type="radio" class="questions" id="q8-r4" onclick="check7()">
+        <label id="la32"> printf()</label>
+        <br>
+        <br>
+        <button class="clr" onclick="unchecked7()">Clear Selection</button>
+        <br>
+        <br>
+    </div>
+    <br>
+    <div id="div10">
+        <h4 class="questions">9) which of the following is not a correct variable type?
+
+        </h4>
+        <input name="gk8" type="radio" class="questions" id="q9-r1" onclick="check8()">
+        <label id="la33"> float</label>
+        <br>
+        <br>
+        <input name="gk8" type="radio" class="questions" id="q9-r2" onclick="check8()">
+        <label id="la34"> real</label>
+        <br>
+        <br>
+        <input name="gk8" type="radio" class="questions" id="q9-r3" onclick="check8()">
+        <label id="la35"> int</label>
+        <br>
+        <br>
+        <input name="gk8" type="radio" class="questions" id="q9-r4" onclick="check8()">
+        <label id="la36"> char</label>
+        <br>
+        <br>
+        <button class="clr" onclick="unchecked8()">Clear Selection</button>
+        <br>
+        <br>
+    </div>
+    <br>
+    <div id="div11">
+        <h4 class="questions">10) Int datatype occupy ____ Bytes
+        </h4>
+        <input name="gk9" type="radio" class="questions" id="q10-r1" onclick="check9()">
+        <label id="la37"> 2</label>
+        <br>
+        <br>
+        <input name="gk9" type="radio" class="questions" id="q10-r2" onclick="check9()">
+        <label id="la38"> 4</label>
+        <br>
+        <br>
+        <input name="gk9" type="radio" class="questions" id="q10-r3" onclick="check9()">
+        <label id="la39"> 6</label>
+        <br>
+        <br>
+        <input name="gk9" type="radio" class="questions" id="q10-r4" onclick="check9()">
+        <label id="la40"> 8</label>
+        <br>
+        <br>
+        <button class="clr" onclick="unchecked9()">Clear Selection</button>
+        <br>
+        <br>
+    </div>
+    <br>
+
+    <div id="div12">
+        <button class="btn" onclick="submit()">Submit</button>
+    </div>
+
+
+</body>
+<script src="app.js"></script>
+
+</html>
+
+</html>
